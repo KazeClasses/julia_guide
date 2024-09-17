@@ -5,8 +5,10 @@ function shuffle(array::Array{Int, 1})
     end
 end
 
+"""
+Sorts the array in place using the insertion sort algorithm.
+"""
 function insertion_sort!(array::Array{Int, 1})
-    # Insert your code here
     for i in 2:length(array)
         key = array[i]
         j = i - 1
